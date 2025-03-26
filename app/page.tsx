@@ -2,7 +2,6 @@ import ContactMe from "@/components/ContactMe";
 import { CustomDock } from "@/components/CustomDock";
 import Education from "@/components/Education";
 import Intro from "@/components/Intro";
-import { Meteors } from "@/components/magicui/meteors";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import WorkExpirience from "@/components/WorkExpirience";
@@ -17,7 +16,6 @@ export default function Home() {
         <Skills />
         <Projects />
         <ContactMe />
-        <Meteors number={20} />
         <CustomDock />
       </main>
     </div>
