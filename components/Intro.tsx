@@ -18,7 +18,7 @@ const Intro = () => {
       </div>
       <div>
         <Avatar className="w-40 h-40">
-          <AvatarImage src="/images/anastasia.jpg" alt="Anastasia" />
+          <AvatarImage src="images/anastasia.jpg" alt="Anastasia" />
           <AvatarFallback>AE</AvatarFallback>
         </Avatar>
       </div>
