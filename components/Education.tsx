@@ -31,7 +31,7 @@ const educationData: EducationItem[] = [
 const Education = () => {
   return (
     <div className="flex flex-col gap-4 w-full">
-      <h1 className="text-2xl font-bold">Education</h1>
+      <h1 className="text-2xl font-bold z-10">Education</h1>
 
       <ol className="relative border-s border-gray-300 dark:border-gray-600">
         {educationData.map((item, index) => (

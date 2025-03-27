@@ -3,7 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const Intro = () => {
   return (
-    <div className="flex gap-4 flex-col-reverse sm:flex-row justify-center items-center">
+    <div className="flex gap-4 flex-col-reverse sm:flex-row justify-center items-center z-10">
       <div className="flex flex-col gap-4">
         <h1 className="text-4xl font-bold">Hi! I am Anastasia</h1>
         <p className="text-base text-gray-700 dark:text-gray-200">

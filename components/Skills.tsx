@@ -26,8 +26,8 @@ const skillsData = [
 const Skills = () => {
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Skills</h1>
-      <div className="flex flex-wrap gap-2">
+      <h1 className="text-2xl font-bold z-10">Skills</h1>
+      <div className="flex flex-wrap gap-2 z-10">
         {skillsData.map((skill, index) => (
           <Badge key={index}>{skill}</Badge>
         ))}

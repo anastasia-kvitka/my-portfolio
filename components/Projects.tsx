@@ -58,8 +58,8 @@ const projectsData: Project[] = [
 const Projects = () => {
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">Projects</h1>
-      <div className="flex flex-wrap gap-4">
+      <h1 className="text-2xl font-bold z-10">Projects</h1>
+      <div className="flex flex-wrap gap-4 z-10">
         {projectsData?.map((item, index) => (
           <Card key={index}>
             <CardHeader>
@@ -80,12 +80,24 @@ const Projects = () => {
               ))}
             </CardContent>
             <CardFooter className="flex gap-2 mt-2">
-              <Link href={item.link} rel="noopener noreferrer" target="_blank">
-                <Button variant="default">View</Button>
-              </Link>
-              <Link href={item.code} rel="noopener noreferrer" target="_blank">
-                <Button variant="outline">Code</Button>
-              </Link>
+              <Button variant="default">
+                <Link
+                  href={item.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View
+                </Link>
+              </Button>
+              <Button variant="outline">
+                <Link
+                  href={item.code}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Code
+                </Link>
+              </Button>
             </CardFooter>
           </Card>
         ))}

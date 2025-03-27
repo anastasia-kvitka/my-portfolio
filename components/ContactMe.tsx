@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <div className="flex flex-col gap-4 mb-20">
+    <div className="flex flex-col gap-4 mb-20 z-10">
       <h1 className="text-2xl font-bold">Contact Me</h1>
       <p className="text-sm text-gray-700 dark:text-gray-300">
         Want to chat? Just shoot me a dm with a direct question on{" "}
