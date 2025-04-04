@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Anastasia's Portfolio",
-  description: "Anastasia's Portfolio",
+  title: "Warp Technologies",
+  description: "Warp Technologies",
 };
 
 export default function RootLayout({
