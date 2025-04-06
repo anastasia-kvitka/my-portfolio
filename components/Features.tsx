@@ -16,7 +16,7 @@ const features: FeatureProps[] = [
   {
     title: "Tactical Deception with False Targets",
     description:
-      "Confuse Enemy Radars – Our stealth technology deploys false targets that mimic real assets, diverting enemy focus and ensuring strategic advantage.",
+      "Confuse Enemy Radars – Our false targets are equipped with Luneburg lenses, making them appear as real assets. This misleads enemy tracking systems and enhances battlefield deception.",
   },
   {
     title: "AI-Powered Reconnaissance",
@@ -32,7 +32,10 @@ const features: FeatureProps[] = [
 
 export const Features = () => {
   return (
-    <section id="features" className="container py-24 sm:py-32 space-y-8">
+    <section
+      id="features"
+      className="container py-24 sm:py-32 space-y-8  px-6 md:px-12"
+    >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
         Many{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">

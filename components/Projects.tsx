@@ -22,20 +22,12 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: "Avid MediCentral | CloudUX",
+    title: "False Talget",
     description: "description",
     link: "https://link.com",
     code: "https://github.com",
     previewVideo: "/videos/Avid.mp4",
-    technologies: ["Figma", "Sketch", "InVision"],
-  },
-  {
-    title: "Avid MediCentral | CloudUX",
-    description: "description",
-    link: "https://link.com",
-    code: "https://github.com",
-    previewVideo: "/videos/Avid.mp4",
-    technologies: ["Figma", "Sketch", "InVision"],
+    technologies: ["Luneburg Lens"],
   },
   {
     title: "Avid MediCentral | CloudUX",
