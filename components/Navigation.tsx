@@ -28,17 +28,18 @@ const routeList: RouteProps[] = [
     href: "/projects",
     label: "CAT",
   },
+
+  {
+    href: "#about",
+    label: "About",
+  },
+  {
+    href: "#howItWorks",
+    label: "How It Works",
+  },
   {
     href: "#features",
     label: "Features",
-  },
-  {
-    href: "#team",
-    label: "Team",
-  },
-  {
-    href: "#pricing",
-    label: "Pricing",
   },
   {
     href: "#faq",
