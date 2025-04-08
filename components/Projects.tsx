@@ -83,7 +83,7 @@ const Projects = () => {
                       View
                     </Link>
                   </Button>
-                  <Button variant="outline">
+                  {/*<Button variant="outline">
                     <Link
                       href={item.code}
                       rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const Projects = () => {
                     >
                       Code
                     </Link>
-                  </Button>
+                  </Button>*/}
                 </CardFooter>
               </Card>
             ))}

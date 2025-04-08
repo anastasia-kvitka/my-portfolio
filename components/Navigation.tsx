@@ -28,7 +28,6 @@ const routeList: RouteProps[] = [
     href: "/projects",
     label: "CAT",
   },
-
   {
     href: "#about",
     label: "About",
