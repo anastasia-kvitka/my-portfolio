@@ -3,7 +3,10 @@ import logo from "./assets/logo.png";
 
 export const About = () => {
   return (
-    <section id="about" className="container py-24 sm:py-32  px-6 md:px-12">
+    <section
+      id="about"
+      className="container py-24 sm:py-32 m-auto px-6 md:px-12"
+    >
       <div className="bg-muted/70 border rounded-lg py-12">
         <div className="px-6 flex flex-col md:flex-row gap-8 md:gap-12">
           <Image

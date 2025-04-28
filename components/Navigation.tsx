@@ -15,7 +15,7 @@ import {
 } from "../components/ui/sheet";
 
 import { Button, buttonVariants } from "./ui/button";
-import { Mail, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { ModeToggle } from "./ModeToggle";
 
 interface RouteProps {
@@ -25,24 +25,12 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
+    href: "/",
+    label: "Home",
+  },
+  {
     href: "/projects",
     label: "CAT",
-  },
-  {
-    href: "#about",
-    label: "About",
-  },
-  {
-    href: "#howItWorks",
-    label: "How It Works",
-  },
-  {
-    href: "#features",
-    label: "Features",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
   },
 ];
 
@@ -51,7 +39,7 @@ export const Navigation = () => {
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
@@ -95,7 +83,7 @@ export const Navigation = () => {
                   ))}
                   <Button className="w-full" variant="secondary">
                     Contact Us
-                    <Mail className="pl-2" />
+                    {/*<Mail className="pl-2" />*/}
                   </Button>
                 </nav>
               </SheetContent>
@@ -121,7 +109,7 @@ export const Navigation = () => {
           <div className="hidden md:flex gap-2">
             <Button className="w-full" variant="secondary">
               Contact Us
-              <Mail className="pl-2" />
+              {/*<Mail className="pl-2" />*/}
             </Button>
 
             <ModeToggle />

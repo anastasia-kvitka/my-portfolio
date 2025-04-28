@@ -15,75 +15,81 @@ interface Project {
   title: string;
   description: string;
   link: string;
-  code: string;
   previewVideo: string;
   technologies: string[];
 }
 
 const projectsData: Project[] = [
   {
-    title: "False Talget",
-    description: "description",
+    title: "Decoy Unit",
+    description:
+      "An intelligent false target equipped with Luneburg lenses to mimic the radar signature of real military assets, effectively diverting enemy targeting systems and exhausting hostile resources.",
     link: "https://link.com",
-    code: "https://github.com",
-    previewVideo: "/videos/Avid.mp4",
+    previewVideo: "/videos",
     technologies: ["Luneburg Lens"],
   },
   {
-    title: "Avid MediCentral | CloudUX",
-    description: "description",
+    title: "Reconnaissance Drone",
+    description:
+      "An AI-powered drone with stealth mode providing real-time situational awareness and target identification.",
     link: "https://link.com",
-    code: "https://github.com",
-    previewVideo: "/videos/Avid.mp4",
-    technologies: ["Figma", "Sketch", "InVision"],
+    previewVideo: "/videos",
+    technologies: ["AI", "stealth"],
   },
   {
-    title: "Avid MediCentral | CloudUX",
-    description: "description",
+    title: "Strike Drone",
+    description:
+      "A precision-guided, autonomous aerial system capable of delivering focused tactical strikes with minimal operator involvement.",
     link: "https://link.com",
-    code: "https://github.com",
-    previewVideo: "/videos/Avid.mp4",
-    technologies: ["Figma", "Sketch", "InVision"],
+    previewVideo: "/videos",
+    technologies: [],
   },
 ];
 
 const Projects = () => {
   return (
-    <div className="relative lg:w-8/12 md:w-9/12 sm:1/1 m-auto items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-2xl font-bold z-10">Projects</h1>
-          <div className="flex flex-wrap gap-4 z-10">
-            {projectsData?.map((item, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  {/* <video
+    <section
+      id="projects"
+      className="container text-center m-auto py-24 sm:py-32 px-6 md:px-12"
+    >
+      <h2 className="text-3xl md:text-4xl font-bold ">
+        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+          CAT{" "}
+        </span>
+        - Combat Autonomous Technology
+      </h2>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
+        {projectsData?.map((item, index) => (
+          <Card key={index}>
+            <CardHeader>
+              {/* <video
                 src={item.previewVideo}
                 autoPlay
                 muted
                 className="w-full h-full"
               />*/}
-                  <CardTitle>{item.title}</CardTitle>
-                  <CardDescription>{item.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex flex-wrap gap-2">
-                  {item.technologies.map((tech, index) => (
-                    <Badge variant="secondary" key={index}>
-                      {tech}
-                    </Badge>
-                  ))}
-                </CardContent>
-                <CardFooter className="flex gap-2 mt-2">
-                  <Button variant="default">
-                    <Link
-                      href={item.link}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      View
-                    </Link>
-                  </Button>
-                  {/*<Button variant="outline">
+              <CardTitle>{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-wrap gap-2">
+              {item.technologies.map((tech, index) => (
+                <Badge variant="secondary" key={index}>
+                  {tech}
+                </Badge>
+              ))}
+            </CardContent>
+            <CardFooter className="flex gap-2 mt-2">
+              <Button variant="default">
+                <Link
+                  href={item.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View
+                </Link>
+              </Button>
+              {/*<Button variant="outline">
                     <Link
                       href={item.code}
                       rel="noopener noreferrer"
@@ -92,13 +98,11 @@ const Projects = () => {
                       Code
                     </Link>
                   </Button>*/}
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </main>
-    </div>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </section>
   );
 };
 
