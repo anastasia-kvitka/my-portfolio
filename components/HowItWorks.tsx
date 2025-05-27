@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { JSX } from "react";
 import { GiftIcon, MapIcon, MedalIcon, PlaneIcon } from "./Icons";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
@@ -58,7 +59,7 @@ export const HowItWorks = () => {
           <Card key={title} className="bg-muted/50">
             <CardHeader>
               <CardTitle className="grid gap-4 place-items-center">
-                {icon}
+                {/*{icon}*/}
                 {title}
               </CardTitle>
             </CardHeader>

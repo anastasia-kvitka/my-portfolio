@@ -45,7 +45,7 @@ export const Features = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description }: FeatureProps) => (
-          <Card key={title}>
+          <Card key={title} className="bg-muted/50">
             <CardHeader>
               <CardTitle>{title}</CardTitle>
             </CardHeader>

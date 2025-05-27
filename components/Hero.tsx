@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 //import { Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
@@ -28,7 +29,9 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Discover CAT in Action</Button>
+          <Button className="w-full md:w-1/3" asChild>
+            <Link href="/projects">Discover CAT in Action</Link>
+          </Button>
           <Button className="w-full md:w-1/3" variant="outline">
             Talk to Our Experts
             {/*<Mail className="w-8 pl-2" >*/}

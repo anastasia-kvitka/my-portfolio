@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 import {
   Card,
@@ -61,7 +62,7 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
         {projectsData?.map((item, index) => (
-          <Card key={index}>
+          <Card key={index} className="bg-muted/50">
             <CardHeader>
               {/* <video
                 src={item.previewVideo}
@@ -79,8 +80,8 @@ const Projects = () => {
                 </Badge>
               ))}
             </CardContent>
-            <CardFooter className="flex gap-2 mt-2">
-              <Button variant="default">
+            {/*<CardFooter className="flex gap-2 mt-2">*/}
+            {/*<Button variant="default">
                 <Link
                   href={item.link}
                   rel="noopener noreferrer"
@@ -88,8 +89,8 @@ const Projects = () => {
                 >
                   View
                 </Link>
-              </Button>
-              {/*<Button variant="outline">
+              </Button>*/}
+            {/*<Button variant="outline">
                     <Link
                       href={item.code}
                       rel="noopener noreferrer"
@@ -98,7 +99,7 @@ const Projects = () => {
                       Code
                     </Link>
                   </Button>*/}
-            </CardFooter>
+            {/*</CardFooter>*/}
           </Card>
         ))}
       </div>
