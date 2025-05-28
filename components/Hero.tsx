@@ -33,8 +33,7 @@ export const Hero = () => {
             <Link href="/projects">Discover CAT in Action</Link>
           </Button>
           <Button className="w-full md:w-1/3" variant="outline">
-            Talk to Our Experts
-            {/*<Mail className="w-8 pl-2" >*/}
+            <Link href="/contact-us">Talk to Our Experts</Link>
           </Button>
         </div>
       </div>

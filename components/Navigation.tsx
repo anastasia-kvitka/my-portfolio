@@ -17,6 +17,7 @@ import {
 import { Button, buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./ModeToggle";
+import Link from "next/link";
 
 interface RouteProps {
   href: string;
@@ -82,8 +83,7 @@ export const Navigation = () => {
                     </a>
                   ))}
                   <Button className="w-full" variant="secondary">
-                    Contact Us
-                    {/*<Mail className="pl-2" />*/}
+                    <Link href="/contact-us">Contact Us</Link>
                   </Button>
                 </nav>
               </SheetContent>
@@ -108,8 +108,7 @@ export const Navigation = () => {
 
           <div className="hidden md:flex gap-2">
             <Button className="w-full" variant="secondary">
-              Contact Us
-              {/*<Mail className="pl-2" />*/}
+              <Link href="/contact-us">Contact Us</Link>
             </Button>
 
             <ModeToggle />

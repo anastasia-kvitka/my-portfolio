@@ -21,7 +21,7 @@ const FAQList: FAQProps[] = [
   {
     question: "How do false targets work?",
     answer:
-      "False targets use stealth and radar deception technologies, including Luneburg lenses and electronic warfare techniques, to mislead enemy detection systems and protect allied forces.",
+      "False targets use radar deception technologies, including Luneburg lenses, to mislead enemy detection systems and protect allied forces.",
     value: "item-2",
   },
   {
