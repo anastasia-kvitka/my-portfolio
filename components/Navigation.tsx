@@ -70,7 +70,7 @@ export const Navigation = () => {
                     Warp Technologies
                   </SheetTitle>
                 </SheetHeader>
-                <nav className="flex flex-col justify-center items-center gap-2 mt-4">
+                <nav className="flex flex-col justify-center items-center gap-2 mx-auto mt-4">
                   {routeList.map(({ href, label }: RouteProps) => (
                     <a
                       rel="noreferrer noopener"
@@ -106,7 +106,7 @@ export const Navigation = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex gap-2">
+          <div className="hidden md:flex gap-4 items-center justify-center">
             <Button className="w-full" variant="secondary">
               <Link href="/contact-us">Contact Us</Link>
             </Button>
