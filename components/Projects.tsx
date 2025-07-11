@@ -29,7 +29,7 @@ const projectsData: Project[] = [
     description:
       "An intelligent false target equipped with Luneburg lenses to mimic the radar signature of real military assets, effectively diverting enemy targeting systems and exhausting hostile resources.",
     link: "https://link.com",
-    previewImage: "/images/IMG_3472.jpg",
+    previewImage: "/images/IMG_3472.png",
     previewVideo: "/videos",
     technologies: ["Luneburg Lens"],
   },
@@ -38,7 +38,7 @@ const projectsData: Project[] = [
     description:
       "An AI-powered drone with stealth mode providing real-time situational awareness and target identification.",
     link: "https://link.com",
-    previewImage: "/images/IMG_3475.jpg",
+    previewImage: "/images/IMG_3475.JPG",
     previewVideo: "/videos",
     technologies: ["AI", "stealth"],
   },
@@ -47,7 +47,7 @@ const projectsData: Project[] = [
     description:
       "A precision-guided, autonomous aerial system capable of delivering focused tactical strikes with minimal operator involvement.",
     link: "https://link.com",
-    previewImage: "/images/IMG_3476.jpg",
+    previewImage: "/images/logo.png",
     previewVideo: "/videos",
     technologies: [],
   },
