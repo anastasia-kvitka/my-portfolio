@@ -11,11 +11,14 @@ import {
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import Image from "next/image";
+import { AspectRatio } from "./ui/aspect-ratio";
 
 interface Project {
   title: string;
   description: string;
   link: string;
+  previewImage: string;
   previewVideo: string;
   technologies: string[];
 }
@@ -26,6 +29,7 @@ const projectsData: Project[] = [
     description:
       "An intelligent false target equipped with Luneburg lenses to mimic the radar signature of real military assets, effectively diverting enemy targeting systems and exhausting hostile resources.",
     link: "https://link.com",
+    previewImage: "/images/IMG_3472.jpg",
     previewVideo: "/videos",
     technologies: ["Luneburg Lens"],
   },
@@ -34,6 +38,7 @@ const projectsData: Project[] = [
     description:
       "An AI-powered drone with stealth mode providing real-time situational awareness and target identification.",
     link: "https://link.com",
+    previewImage: "/images/IMG_3475.jpg",
     previewVideo: "/videos",
     technologies: ["AI", "stealth"],
   },
@@ -42,6 +47,7 @@ const projectsData: Project[] = [
     description:
       "A precision-guided, autonomous aerial system capable of delivering focused tactical strikes with minimal operator involvement.",
     link: "https://link.com",
+    previewImage: "/images/IMG_3476.jpg",
     previewVideo: "/videos",
     technologies: [],
   },
@@ -70,6 +76,14 @@ const Projects = () => {
                 muted
                 className="w-full h-full"
               />*/}
+              <AspectRatio ratio={3 / 2} className="mb-4">
+                <Image
+                  src={item.previewImage}
+                  alt=""
+                  fill
+                  className="rounded-md object-cover"
+                />
+              </AspectRatio>
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
             </CardHeader>
