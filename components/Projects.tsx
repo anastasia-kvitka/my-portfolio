@@ -40,25 +40,25 @@ const projectsData: Project[] = [
     link: "https://link.com",
     previewImage: "/images/IMG_3475.JPG",
     previewVideo: "/videos",
-    technologies: ["AI", "stealth"],
+    technologies: ["AI", "stealth", "interceptor"],
   },
   {
-    title: "Strike Drone / False Target - 200-300 km",
+    title: "Strike Drone / False Target - up to 300 km",
     description:
       "A precision-guided, autonomous aerial system capable of delivering focused tactical strikes with minimal operator involvement.",
     link: "https://link.com",
     previewImage: "/images/IMG_3478.JPG",
     previewVideo: "/videos",
-    technologies: [],
+    technologies: ["Luneburg Lens", "strike drone"],
   },
   {
     title: "Reconnaissance Drone",
     description:
       "An AI-powered drone with stealth mode providing real-time situational awareness and target identification.",
     link: "https://link.com",
-    previewImage: "/images/logo.png",
+    previewImage: "/images/IMG_3473.JPG",
     previewVideo: "/videos",
-    technologies: ["AI", "stealth"],
+    technologies: ["AI", "stealth", "high-resolution camera"],
   },
 ];
 
