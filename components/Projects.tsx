@@ -25,31 +25,40 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: "Decoy Unit",
+    title: "Decoy Unit - 1000+ km",
     description:
       "An intelligent false target equipped with Luneburg lenses to mimic the radar signature of real military assets, effectively diverting enemy targeting systems and exhausting hostile resources.",
     link: "https://link.com",
-    previewImage: "/images/IMG_3472.png",
+    previewImage: "/images/IMG_3472.JPG",
     previewVideo: "/videos",
     technologies: ["Luneburg Lens"],
   },
   {
-    title: "Reconnaissance Drone",
+    title: "Interceptor Drone",
     description:
-      "An AI-powered drone with stealth mode providing real-time situational awareness and target identification.",
+      "A high-speed UAV designed to detect and neutralize enemy drones. Its stealth mode reduces visibility to radar and thermal sensors, enabling covert interception in contested airspace.",
     link: "https://link.com",
     previewImage: "/images/IMG_3475.JPG",
     previewVideo: "/videos",
     technologies: ["AI", "stealth"],
   },
   {
-    title: "Strike Drone",
+    title: "Strike Drone / False Target - 200-300 km",
     description:
       "A precision-guided, autonomous aerial system capable of delivering focused tactical strikes with minimal operator involvement.",
     link: "https://link.com",
-    previewImage: "/images/logo.png",
+    previewImage: "/images/IMG_3478.JPG",
     previewVideo: "/videos",
     technologies: [],
+  },
+  {
+    title: "Reconnaissance Drone",
+    description:
+      "An AI-powered drone with stealth mode providing real-time situational awareness and target identification.",
+    link: "https://link.com",
+    previewImage: "/images/logo.png",
+    previewVideo: "/videos",
+    technologies: ["AI", "stealth"],
   },
 ];
 
